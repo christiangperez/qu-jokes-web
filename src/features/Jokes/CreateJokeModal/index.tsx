@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import { IJoke } from '../../../interfaces';
 import './styles.scss';
@@ -34,7 +34,7 @@ export const CreateJokeModal = ({ title = '', modalIsOpen, closeModal, acceptMod
   const [punchline, setPunchline] = useState('');
   const [type, setType] = useState('');
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (setup && punchline && type) {
       acceptModal({ setup, punchline, type, id: 0 });
