@@ -8,15 +8,15 @@ I am using the Jokes API that was provided to me, but I made some minor changes.
 
 ### How to run
 
-Download the qu-jokes-api repository: https://github.com/christiangperez/qu-jokes-api
-Run command: npm install
-Run command:node index (it will run into 3005 port)
+- Download the qu-jokes-api repository: https://github.com/christiangperez/qu-jokes-api
+- Run command: npm install
+- Run command:node index (it will run into 3005 port)
 
 ## Jokes Web
 
-Download the qu-jokes-web repository: https://github.com/christiangperez/qu-jokes-web
-Run command: npm install
-Run command: npm start (The environment variable is configurated to aim to localhost:3005/jokes)
+- Download the qu-jokes-web repository: https://github.com/christiangperez/qu-jokes-web
+- Run command: npm install
+- Run command: npm start (The environment variable is configurated to aim to localhost:3005/jokes)
 
 ### Features
 
