@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Qu Jokes Challenge by Christian Perez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created to solve the challenge for Qu Beyond.
 
-## Available Scripts
+## Jokes Api
 
-In the project directory, you can run:
+I am using the Jokes API that was provided to me, but I made some minor changes. I simply added a few endpoints; it could be refactored to separate into routes, controllers, and services, but due to the simplicity of the exercise, I left it as it is.
 
-### `npm start`
+### How to run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Download the qu-jokes-api repository: https://github.com/christiangperez/qu-jokes-api
+Run command: npm install
+Run command:node index (it will run into 3005 port)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Jokes Web
 
-### `npm test`
+Download the qu-jokes-web repository: https://github.com/christiangperez/qu-jokes-web
+Run command: npm install
+Run command: npm start (The environment variable is configurated to aim to localhost:3005/jokes)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Find Jokes: You can search for jokes by specifying the number you want to retrieve, and you have the option to sort them by type and/or joke description (setup).
+- Delete Jokes: This allows you to remove any joke that you no longer wish to keep.
+- Like Joke: I did not implement user management because the goal is to demonstrate the functionality of likes. This means one can like a joke multiple times without a user system to keep the exercise straightforward.
+- Jokes Theme: Jokes of the "Programming" and "Knock-knock" types feature a distinct style.
+- Add Joke: Allows the addition of a new joke to the list.
+- Top Ten: Displays the top ten jokes with the most likes.
+- About page: Provides information about the purpose of the project and my contact email.
+- Navbar: Navigation to access each of the screens.
+- Responsive Website: The site is responsive and adapts for both desktop and mobile.
+- Eslint y prettier: For code analysis and formatting.
+- Estilos CSS: SASS was used to style the entire application.
+- Typescript: The project is fully typed to ensure that everything has its type and interface for API communication.
+- Animaciones y efectos: There are subtle animations and effects throughout the site, such as on the navbar title, navbar menu items, like and delete buttons, action buttons, etc.
+- Llamadas a la API: These are centralized in the jokesApi.ts file.
+- HTML Semantico: Appropriate tags have been used in each situation to avoid using a div tag for every block.
