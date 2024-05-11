@@ -1,0 +1,36 @@
+@import '../../styles/color.scss';
+
+.delete-modal {
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+
+  h2 {
+    padding-bottom: 20px;
+    color: white;
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 2rem;
+
+    button {
+      padding: 5px;
+      width: 80px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:last-of-type {
+      background-color: $secondary-color;
+      color: white;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: $secondary-light-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import '../../../styles/color.scss';
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.jokes__card {
+  border-radius: 8px;
+  width: 100%;
+
+  &.programming {
+    background: linear-gradient($joke-card-border-begin-color2, $joke-card-border-end-color2);
+  }
+
+  &.knock-knock {
+    background: linear-gradient($joke-card-border-begin-color3, $joke-card-border-end-color3);
+  }
+
+  &.default {
+    background: linear-gradient($joke-card-border-begin-color1, $joke-card-border-end-color1);
+  }
+
+  .content {
+    background: linear-gradient(to right bottom, $joke-card-background-color1, $joke-card-background-color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin: 1.6px;
+    color: rgb(226, 226, 226);
+    height: 150px;
+
+    .joke {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      svg {
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $secondary-light-color;
+        }
+      }
+
+      .heart-pulse {
+        animation: pulse 1s ease-in-out infinite;
+      }
+    }
+
+    .type {
+      display: flex;
+      justify-content: center;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      text-transform: uppercase;
+      padding: 0.2rem;
+      font-weight: 600;
+
+      &.programming {
+        background: $joke-card-footer-background-color2;
+        color: $joke-card-footer-color2;
+      }
+
+      &.knock-knock {
+        background: $joke-card-footer-background-color3;
+        color: $joke-card-footer-color3;
+      }
+
+      &.default {
+        background: $joke-card-footer-background-color;
+        color: $joke-card-footer-color;
+      }
+    }
+  }
+}

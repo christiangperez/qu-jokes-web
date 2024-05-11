@@ -1,0 +1,42 @@
+@import '../../../../styles/color.scss';
+
+@keyframes moveBtnAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.scroll-to-top-button {
+  position: relative;
+
+  .icon {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+
+    background-color: $primary-color;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: $secondary-color;
+    cursor: pointer;
+    animation: 3s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+    animation: moveBtnAnimation 3s ease-in-out infinite;
+    animation-iteration-count: infinite;
+
+    &:hover {
+      background: $secondary-color;
+      color: $primary-color;
+      border: 2px solid $secondary-color;
+    }
+  }
+}

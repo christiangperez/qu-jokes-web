@@ -1,0 +1,67 @@
+@import '../../../styles/color.scss';
+
+.jokes {
+  padding-top: 78px;
+  min-height: 100vh;
+
+  .create-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    button {
+      margin: 0 2rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: $secondary-color;
+      border-radius: 8px;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1;
+      padding: 0.6rem 1.5rem;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white;
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: $secondary-light-color;
+        color: white;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    .container {
+      width: 50vw;
+      border-radius: 8px;
+      padding: 1rem 0;
+    }
+  }
+}

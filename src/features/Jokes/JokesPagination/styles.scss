@@ -1,0 +1,17 @@
+@import '../../../styles/color.scss';
+
+.jokes__pagination {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

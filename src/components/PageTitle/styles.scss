@@ -1,0 +1,17 @@
+@import '../../styles/color.scss';
+
+.page-title {
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    padding: 5px 0;
+    color: $secondary-color;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 5px 0;
+    color: $text-color;
+  }
+}

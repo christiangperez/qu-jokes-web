@@ -1,0 +1,42 @@
+@import './styles/color';
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  color: $text-color;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #a3a3a3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-color;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $secondary-color #a3a3a3;
+}
+
+.app {
+  overflow-x: hidden;
+  background: linear-gradient(to right, $primary-color, rgba(10, 18, 30, 0.95), transparent),
+    linear-gradient(to left bottom, $primary-color, rgba(10, 18, 30, 0.9), transparent),
+    linear-gradient(to left top, $primary-light-color, rgba(10, 18, 30, 0.6), transparent);
+  background-repeat: no-repeat;
+}

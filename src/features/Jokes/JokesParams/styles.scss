@@ -1,0 +1,101 @@
+@import '../../../styles/color.scss';
+
+.jokes__params {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  background-color: #5b68e16b;
+  color: black;
+  border-radius: 8px;
+  padding: 1rem;
+  color: white;
+
+  .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    input {
+      padding: 0.5rem;
+      border: 1px solid $secondary-color;
+      border-radius: 4px;
+      width: 70px;
+      text-align: center;
+    }
+
+    button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: $secondary-color;
+      border-radius: 8px;
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1;
+      padding: 0.6rem 1.5rem;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white;
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: $secondary-light-color;
+        color: white;
+      }
+    }
+
+    .create {
+      background: transparent;
+      border: 1px solid $secondary-color;
+
+      &:hover {
+        background: transparent;
+        border-color: $secondary-light-color;
+      }
+    }
+  }
+
+  .sort {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+    gap: 1rem;
+
+    div {
+      display: flex;
+      gap: 0.5rem;
+
+      input[type='checkbox'] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        border: 1px solid $secondary-color;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:checked {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 50vw;
+  }
+}
